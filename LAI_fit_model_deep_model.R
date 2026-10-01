@@ -3,7 +3,7 @@ require(terra)
 
 
 #############################
-## shallow model using keras
+## deep model using keras
 #############################
 
 
@@ -46,7 +46,7 @@ y_test <- as.matrix(y[-train])
 # define the model architecture (number of hidden layers, number of
 # inputs and outputs)
 model <- keras_model_sequential() |>
-  # create first and only (hidden) layer
+  # create first (hidden) layer
   layer_dense(
     # define number of hidden units in the layer
     units = 20,
